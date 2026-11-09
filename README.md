@@ -1,44 +1,19 @@
-# CERBERUS-UAV-Redesign
-Technical redesign of CERBERUS, a 2021 NASA Space Apps Challenge search-and-rescue UAV concept. Includes CAD, engineering analysis, simulation, and software development.
+# CERBERUS as we presented it in 2021
 
-# CERBERUS | Search-and-Rescue UAV
+Our two-person team, BK Dalaman Drone Team, prepared CERBERUS for the 2021 NASA Space Apps Challenge. We were interested in whether an unmanned aircraft could help rescuers investigate an earthquake-affected area without sending people into every uncertain location first.
 
-### NASA Space Apps Challenge 2021 | Engineering Redesign 2026
+The proposed workflow was simple: travel to the area, find a suitable place to land, send ultrasonic signals into the ground, analyse the returning signals, and show potentially important locations on a map for rescue teams. We also discussed a possible hydrogen-powered version.
 
-**Original Team:** BK Dalaman Drone Team  
-**Field:** Aerospace Engineering, Robotics, Autonomous Systems
+The presentation records **an early concept**. In particular, the idea of imaging deep into rubble or soil using a drone-mounted ultrasonic sensor still needs a physical feasibility study.
 
-## 1. Project Overview
+## Files preserved here
 
-CERBERUS is a search-and-rescue unmanned aerial vehicle (UAV) concept originally developed for the 2021 NASA International Space Apps Challenge.
+- [nasa.pptx](nasa.pptx) — our original seven-slide presentation. The first slide spells the project name “CERBEUS”; I have preserved the file unchanged.
+- [CERBERUS_2021_drone_view_rotated.png](CERBERUS_2021_drone_view_rotated.png) — a rotated, readable copy of the annotated drone image extracted from slide 5. It shows the proposed multirotor layout and labels for the camera, ultrasonic device, GPS, battery and motors. It is an illustration, not a recoverable native CAD assembly.
 
-The project explores how aerial robotics and sensing technologies could support emergency response teams following earthquakes and structural collapses.
+The available 2021 materials identify **Emel Tohumcuoğlu and Kubilay Kalkan** as the presentation authors.
 
-The original concept proposed using ultrasonic sensing to investigate subsurface structures and identify potential rescue locations.
+[Official NASA Space Apps project archive](https://2021.spaceappschallenge.org/challenges/statements/drones-and-satellites-for-urban-development/teams/bk-dalaman-drone-team/project/)
 
-## 2. Engineering Redesign (2026)
+The separate [2026 engineering notes](../02-engineering-2026/README.md) describe the later analysis and design decisions.
 
-The project is currently undergoing a technical redesign focused on:
-
-- UAV mechanical design and 3D CAD modelling
-- Aerodynamic and propulsion calculations
-- Sensor feasibility and signal propagation
-- Autonomous navigation and 3D mapping
-- Python-based simulation and data analysis
-- Power management and flight endurance
-
-## 3. Development Status
-
-**2021:** Original concept and competition submission.
-
-**2026:** Engineering analysis and redesign in progress.
-
-Technical calculations, CAD models, simulations and validation results will be documented as they are completed.
-
-## 4. Original Project
-
-[NASA Space Apps Challenge 2021 – CERBERUS](https://2021.spaceappschallenge.org/challenges/statements/drones-and-satellites-for-urban-development/teams/bk-dalaman-drone-team/project/)
-
-## 5. Project Documentation
-
-Engineering documentation, design files and simulation results will be organised within this repository.
