@@ -1,6 +1,6 @@
 # Preliminary Mass and Propulsion Analysis
 
-*CERBERUS Engineering Redesign — November 2026*
+*CERBERUS Engineering Redesign — 2026*
 
 ## From thrust requirements to a component-level design
 
