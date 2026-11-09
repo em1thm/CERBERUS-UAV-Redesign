@@ -1,48 +1,47 @@
+# CERBERUS — The Original 2021 Concept
 
-# CERBERUS as we presented it in 2021
+In 2021, our two-person team, BK Dalaman Drone Team, developed CERBERUS for the NASA International Space Apps Challenge. We were both high school students, interested in exploring how drones could support search-and-rescue operations after earthquakes.
 
-Our two-person team, BK Dalaman Drone Team, prepared CERBERUS for the 2021 NASA Space Apps Challenge. We were both high school students at the time, and we chose the Drones and Satellites for Urban Development challenge because we wanted to explore how technology could help people following an earthquake.
+We chose the *Drones and Satellites for Urban Development* challenge and began researching technologies that might help rescue teams investigate collapsed structures and difficult-to-access areas.
 
-Our starting idea was to use a drone to investigate areas that might be difficult or dangerous for rescue teams to enter.
+## How we imagined CERBERUS would work
 
-## The original idea
+Our idea began with medical ultrasound. We wondered whether a similar principle could be applied to the ground and earthquake debris to locate potentially trapped people.
 
-We took inspiration from medical ultrasound and wondered whether a similar sensing principle could help us examine what was happening beneath the ground or inside earthquake debris.
+We proposed a drone that would fly to an affected area, identify a suitable landing location, transmit ultrasonic waves, and analyse the returning signals to create a map of locations requiring attention.
 
-Our proposed drone would travel to the affected area, identify a suitable landing location, transmit ultrasonic waves, and analyse the returning signals.
+We also imagined using artificial intelligence to classify and mark areas on that map:
 
-We also imagined a mapping system that would mark locations of interest for rescue teams. In the presentation, we proposed three categories:
+- **Blue:** Possible signs of life
+- **Green:** Areas considered safe to enter
+- **Red:** Potentially dangerous areas
 
-- Blue: Possible signs of life
-- Green: Areas considered safe to enter
-- Red: Potentially dangerous areas
+The proposed system would share these observations and their coordinates with rescue teams.
 
-The original concept also included the possibility of hydrogen-based power.
+Our presentation also explored hydrogen as a possible future energy source for the aircraft.
 
-## Our original design
+## Our original drone design
 
 ![Original CERBERUS drone illustration](CERBERUS_2021_drone_view_rotated.png)
 
-The illustration from our 2021 presentation shows an eight-rotor configuration with labels for the motors, battery, GPS, camera and ultrasonic sensing equipment.
+The illustration from our 2021 presentation shows an eight-rotor aircraft with labelled positions for the motors, battery, GPS, camera and ultrasonic sensing equipment.
 
-At this stage, the design represented our proposed system architecture. We had not established the technical performance of the complete aircraft.
+This drawing captured how we imagined the different parts of CERBERUS working together. The available presentation describes the proposed operation and system architecture, while leaving the aircraft's quantitative flight performance and sensing capability for further investigation.
 
 ## Original project materials
 
-- [2021 presentation — nasa.pptx](nasa.pptx)
-- [Original annotated drone illustration](CERBERUS_2021_drone_view_rotated.png)
-- [Official NASA Space Apps project page](https://2021.spaceappschallenge.org/challenges/statements/drones-and-satellites-for-urban-development/teams/bk-dalaman-drone-team/project/)
+- [Original 2021 presentation (PowerPoint)](nasa.pptx)
+- [Annotated drone design](CERBERUS_2021_drone_view_rotated.png)
+- [Official NASA Space Apps project archive](https://2021.spaceappschallenge.org/challenges/statements/drones-and-satellites-for-urban-development/teams/bk-dalaman-drone-team/project/)
 
-The presentation identifies Emel Tohumcuoğlu and Kubilay Kalkan as its authors.
+The presentation identifies **Emel Tohumcuoğlu and Kubilay Kalkan** as its authors.
 
-The title slide contains the spelling "CERBEUS". I have preserved the original presentation as it was submitted.
+The title slide spells the project name "CERBEUS". This spelling has been retained in the recovered presentation file to preserve the original material.
 
-## Looking back in 2026
+## Revisiting the project in 2026
 
-One of the questions I want to investigate is whether the ultrasonic sensing approach we proposed could work in a realistic earthquake environment.
+Five years later, I returned to CERBERUS with a better understanding of the engineering questions behind our original idea.
 
-The behaviour of sound waves at the boundaries between air, concrete, soil and other materials is particularly important.
+I am now examining the feasibility of ultrasonic sensing in earthquake debris, the propulsion requirements of the eight-rotor design, and the mechanical and electrical systems needed to develop the concept further.
 
-I am also revisiting the eight-rotor design to understand its propulsion requirements, structural mass and potential advantages.
-
-The results of this work are documented in the [2026 engineering analysis](../02-engineering-2026/README.md).
+I am documenting this work separately in the [2026 Engineering Redesign](../02-engineering-2026/README.md).
