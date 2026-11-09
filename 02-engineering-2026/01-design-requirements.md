@@ -1,6 +1,6 @@
 # Initial UAV Sizing and Thrust Requirements
 
-*CERBERUS Engineering Redesign — November 2026*
+*CERBERUS Engineering Redesign — 2026*
 
 ## Establishing the first design parameters
 
