@@ -1,57 +1,88 @@
+# CERBERUS — First UAV Sizing Calculations
 
-# CERBERUS 2026 — Preliminary Design Requirements
+*Engineering Redesign, 2026*
 
-## 1. Design Objective
+## Where I started
 
-Develop a technically feasible search-and-rescue UAV based on the original 2021 CERBERUS concept.
+When I began revisiting CERBERUS, one of my first questions was how much thrust the aircraft would need to remain airborne.
 
-The initial design investigation uses an eight-rotor configuration inspired by the original project.
+Our original 2021 design featured eight rotors, but we had not calculated the propulsion requirements of that configuration in the available presentation.
 
-## 2. Preliminary Design Assumptions
+I began with a simplified model to establish an initial reference for motor selection.
 
-| Parameter | Initial Value |
+## 1. Initial assumptions
+
+For this first calculation, I used the following values:
+
+| Parameter | Value |
 |---|---|
-| Configuration | Eight-rotor multirotor |
-| Takeoff mass | 3.2 kg |
+| Aircraft configuration | Octocopter |
+| Number of motors | 8 |
+| Assumed takeoff mass | 3.2 kg |
 | Gravitational acceleration | 9.81 m/s² |
-| Target thrust-to-weight ratio | 2.0 |
-| Application | Disaster-area mapping and search support |
+| Target maximum thrust-to-weight ratio | 2:1 |
 
-All numerical values are preliminary assumptions subject to component selection and validation.
+The 3.2 kg takeoff mass was an initial assumption, chosen to explore the propulsion requirements before developing a detailed component list.
 
-## 3. Hover Thrust Calculation
+I used a 2:1 static thrust-to-weight ratio as a preliminary design target to provide thrust headroom for manoeuvring and control.
 
-Total weight:
+## 2. Calculating the required thrust
 
-W = m × g
+The total weight of the aircraft is:
 
-W = 3.2 × 9.81 = 31.392 N
+**W = m × g**
 
-Hover thrust per motor:
+W = 3.2 × 9.81
 
-T = W / 8 = 3.924 N
+**W = 31.392 N**
 
-Equivalent thrust:
+For an octocopter, assuming equal thrust distribution across all eight motors:
 
-T = 400 gf per motor
+**T_hover = W / 8**
 
-Target maximum static thrust per motor:
+T_hover = 31.392 / 8
 
-T_max = 800 gf
+**T_hover = 3.924 N per motor**
 
-## 4. Engineering Questions
+Converting this into gram-force:
 
-1. Is an eight-rotor configuration justified by the payload requirements?
-2. How does rotor count affect total system mass and efficiency?
-3. What motor and propeller combinations meet the thrust requirement?
-4. What battery capacity is required for the mission?
-5. How should the sensing payload be mechanically integrated?
-6. What level of flight and sensing autonomy is achievable?
+3.924 / 0.00980665 ≈ 400 gf
 
-## 5. Validation Status
+Each motor would therefore need to produce approximately **400 gf of thrust** to maintain a stationary hover under these assumptions.
 
-Current stage: Preliminary analytical design.
+With the preliminary 2:1 thrust-to-weight target:
 
-The design has not yet been validated through physical testing.
+**T_max = 2 × 400 = 800 gf per motor**
 
-Next step: Compare quadcopter, hexacopter and octocopter configurations.
+This establishes an initial minimum target for the motor-propeller combination's maximum static thrust.
+
+## 3. What this calculation helped me understand
+
+The calculation gave me a starting point for evaluating possible propulsion systems.
+
+It also raised another question: how accurately could I estimate the total mass of an aircraft that would need to carry eight motors, a battery, flight-control electronics and additional sensing equipment?
+
+To investigate that question, I moved on to a comparison of multirotor configurations and a preliminary component-level mass budget.
+
+## 4. Updating the initial assumption
+
+After considering reference components and estimated structural masses, the preliminary octocopter mass budget increased to **3,535 g**.
+
+At this revised mass, the estimated hover thrust becomes:
+
+T_hover = 3535 / 8
+
+**T_hover ≈ 442 gf per motor**
+
+The revised estimate will be used as a starting point for the next stage of design.
+
+The remaining uncertainties include frame mass, sensing payload mass, motor efficiency and actual flight power consumption.
+
+## 5. Next calculations
+
+The following documents continue this investigation:
+
+- [Comparison of four-, six- and eight-rotor configurations](02-multirotor-comparison.md)
+- [Component mass and propulsion budget](03-mass-and-propulsion-budget.md)
+
+These results are preliminary analytical estimates. The aircraft's performance will need to be evaluated using component specifications, CAD-based mass estimates and simulation or experimental data.
