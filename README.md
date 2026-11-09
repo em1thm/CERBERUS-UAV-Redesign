@@ -1,19 +1,38 @@
-# CERBERUS as we presented it in 2021
 
-Our two-person team, BK Dalaman Drone Team, prepared CERBERUS for the 2021 NASA Space Apps Challenge. We were interested in whether an unmanned aircraft could help rescuers investigate an earthquake-affected area without sending people into every uncertain location first.
+# CERBERUS — revisiting a 2021 search-and-rescue drone concept
 
-The proposed workflow was simple: travel to the area, find a suitable place to land, send ultrasonic signals into the ground, analyse the returning signals, and show potentially important locations on a map for rescue teams. We also discussed a possible hydrogen-powered version.
+*NASA Space Apps Challenge 2021 · Engineering review and redesign, 2026*
 
-The presentation records **an early concept**. In particular, the idea of imaging deep into rubble or soil using a drone-mounted ultrasonic sensor still needs a physical feasibility study.
+![Original CERBERUS drone concept, from the 2021 presentation](01-original-2021/CERBERUS_2021_drone_view_rotated.png)
 
-## Files preserved here
+In 2021, our two-person team, **BK Dalaman Drone Team**, developed CERBERUS for the NASA Space Apps Challenge. We imagined a drone that could reach an earthquake-affected area, land at a suitable location, use ultrasonic sensing to investigate the ground, and share mapped observations with rescue teams.
 
-- [nasa.pptx](nasa.pptx) — our original seven-slide presentation. The first slide spells the project name “CERBEUS”; I have preserved the file unchanged.
-- [CERBERUS_2021_drone_view_rotated.png](CERBERUS_2021_drone_view_rotated.png) — a rotated, readable copy of the annotated drone image extracted from slide 5. It shows the proposed multirotor layout and labels for the camera, ultrasonic device, GPS, battery and motors. It is an illustration, not a recoverable native CAD assembly.
+At the time, we drew inspiration from medical ultrasound. Looking back at that idea in 2026, I wanted to find out which parts were technically plausible and what an actual aircraft would need to carry them out. That question is the starting point for this repository.
 
-The available 2021 materials identify **Emel Tohumcuoğlu and Kubilay Kalkan** as the presentation authors.
+## What I have looked at so far
 
-[Official NASA Space Apps project archive](https://2021.spaceappschallenge.org/challenges/statements/drones-and-satellites-for-urban-development/teams/bk-dalaman-drone-team/project/)
+I started with the aircraft itself. The original illustration shows **eight rotors**, so I used it as the reference configuration and compared it with four- and six-rotor alternatives.
 
-The separate [2026 engineering notes](../02-engineering-2026/README.md) describe the later analysis and design decisions.
+- With an initial **3.2 kg** reference mass, an eight-rotor aircraft would need approximately **400 gf of hover thrust per motor**.
+- Under an ideal actuator-disk model with equal 10-inch propellers and equal aircraft mass, the estimated induced powers are approximately **250 W (4 rotors), 204 W (6 rotors), and 176 W (8 rotors)**. These are controlled comparison cases, not predicted electrical consumption.
+- I then assembled a preliminary octocopter mass budget using published component specifications and estimated structural masses. The current total is **3,535 g**. At an assumed average electrical load of **420 W**, a **4S 10 Ah** battery would provide about **16.9 minutes** at 80% usable nominal energy. Both the mass and power estimates need further validation.
 
+These calculations changed my initial assumptions: adding real components increased the mass estimate, and rotor count alone was not enough to select the final design.
+
+The other major question is sensing. Our 2021 proposal relied on ultrasonic waves to map what lay below rubble or soil. I am examining acoustic transmission and practical sensor alternatives before choosing equipment for a new model.
+
+## Repository guide
+
+- [Original 2021 material](01-original-2021/README.md) — competition presentation and original annotated drone image.
+- [2026 engineering notes](02-engineering-2026/README.md) — current calculations, assumptions and design decisions.
+- [Initial design calculation](02-engineering-2026/01-design-requirements.md) — the 3.2 kg starting case.
+- [Multirotor comparison](02-engineering-2026/02-multirotor-comparison.md) — four, six and eight rotors under shared assumptions.
+- [Mass and propulsion budget](02-engineering-2026/03-mass-and-propulsion-budget.md) — provisional components and endurance estimate.
+
+## What comes next
+
+The next task is to turn the mass and geometry assumptions into a **parametric Fusion 360 model**. After that I plan to revisit propulsion estimates with actual motor–propeller curves and examine the sensing problem more closely. CAD files, code and test results will be added when they exist.
+
+**Current evidence (November 2026):** the original competition presentation and concept image, preliminary calculations, and a component-level estimate. The 2026 aircraft has not yet been built or flight-tested.
+
+[Original CERBERUS submission — NASA Space Apps 2021](https://2021.spaceappschallenge.org/challenges/statements/drones-and-satellites-for-urban-development/teams/bk-dalaman-drone-team/project/)
