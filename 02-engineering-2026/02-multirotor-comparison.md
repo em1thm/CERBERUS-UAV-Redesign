@@ -1,6 +1,6 @@
 # Multirotor Configuration Analysis
 
-*CERBERUS Engineering Redesign — November 2026*
+*CERBERUS Engineering Redesign — 2026*
 
 ## Why reconsider the original octocopter?
 
