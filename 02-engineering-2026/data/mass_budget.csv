@@ -1,0 +1,12 @@
+component,group,quantity,nominal_total_mass_g,evidence_type,source_url,notes
+MN3110 KV700 motors,Propulsion,8,792,manufacturer,https://store.tmotor.com/product/mn3110-motor-navigator-type.html,99 g each including cables
+P12x4 propellers,Propulsion,8,116,provisional_interpretation,https://store.tmotor.com/product/polish-carbon-fiber-12x4-prop.html,14.5 g per propeller assumed; product lists Weight (Single Blade); requires clarification
+XRotor Micro 20A ESCs,Propulsion,8,54,manufacturer_rounded,https://www.hobbywing.com/en/products/xrotor-micro-20a30a35a-blheli190.html,6.8 g each rounded to 54 g total
+Tattu 4S 10000 mAh battery,Energy and wiring,1,921,manufacturer,https://store.foxtech.com/tattu-g-tech-14-8v-4s-10000mah-25c-lipo-battery/,921 g +/- 15 g
+Power distribution and wiring,Energy and wiring,1,150,design_allowance,,Unmeasured allowance
+Pixhawk 6C Mini Model A,Avionics and sensing,1,42,manufacturer_rounded,https://docs.holybro.com/autopilot/pixhawk-6c-mini/technical-specification,42.4 g specified for current Model A
+GPS and telemetry,Avionics and sensing,1,90,design_allowance,,Unspecified modules
+Camera and sensing equipment,Avionics and sensing,1,240,design_allowance,,Placeholder payload; sensors not selected
+Frame and motor arms,Structure,1,750,design_allowance,,Pending CAD mass properties
+Landing gear,Structure,1,180,design_allowance,,Pending CAD mass properties
+Design margin,Design reserve,1,200,design_allowance,,Preliminary weight allowance
